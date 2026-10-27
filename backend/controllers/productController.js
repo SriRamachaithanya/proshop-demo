@@ -7,8 +7,6 @@ import Product from'../models/productModel.js';
 const getProducts =asyncHandler(async(req,res)=>{
      const products=await Product.find({});
     res.json(products);
-
-
 });
 //@desc fetch a product
 // @routes GET/api/products/:id
